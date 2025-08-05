@@ -1,0 +1,388 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC698A6353D8FFBF5",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../manuscript_falcon_1024.gen/sources_1/bd/design_compute_key",
+      "name": "design_compute_key",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "compute_public_0": ""
+    },
+    "interface_ports": {
+      "ap_ctrl_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:acc_handshake:1.0",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0",
+        "port_maps": {
+          "start": {
+            "physical_name": "ap_ctrl_0_start",
+            "direction": "I"
+          },
+          "done": {
+            "physical_name": "ap_ctrl_0_done",
+            "direction": "O"
+          },
+          "idle": {
+            "physical_name": "ap_ctrl_0_idle",
+            "direction": "O"
+          },
+          "ready": {
+            "physical_name": "ap_ctrl_0_ready",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "ports": {
+      "ap_clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_compute_key_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_return_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "f_address0_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "f_ce0_0": {
+        "direction": "O"
+      },
+      "f_q0_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "g_address0_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "g_ce0_0": {
+        "direction": "O"
+      },
+      "g_q0_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_address0_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_address1_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "9",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_ce0_0": {
+        "direction": "O"
+      },
+      "h_ce1_0": {
+        "direction": "O"
+      },
+      "h_d0_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_d1_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_q0_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_q1_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "h_we0_0": {
+        "direction": "O"
+      },
+      "h_we1_0": {
+        "direction": "O"
+      },
+      "logn_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "compute_public_0": {
+        "vlnv": "Duy_Nguyen:Falcon_Keygen:compute_public:2.2",
+        "ip_revision": "2114114810",
+        "xci_name": "design_compute_key_compute_public_0_0",
+        "xci_path": "ip\\design_compute_key_compute_public_0_0\\design_compute_key_compute_public_0_0.xci",
+        "inst_hier_path": "compute_public_0"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl_0",
+          "compute_public_0/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk_0",
+          "compute_public_0/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst_0",
+          "compute_public_0/ap_rst"
+        ]
+      },
+      "compute_public_0_ap_return": {
+        "ports": [
+          "compute_public_0/ap_return",
+          "ap_return_0"
+        ]
+      },
+      "compute_public_0_f_address0": {
+        "ports": [
+          "compute_public_0/f_address0",
+          "f_address0_0"
+        ]
+      },
+      "compute_public_0_f_ce0": {
+        "ports": [
+          "compute_public_0/f_ce0",
+          "f_ce0_0"
+        ]
+      },
+      "compute_public_0_g_address0": {
+        "ports": [
+          "compute_public_0/g_address0",
+          "g_address0_0"
+        ]
+      },
+      "compute_public_0_g_ce0": {
+        "ports": [
+          "compute_public_0/g_ce0",
+          "g_ce0_0"
+        ]
+      },
+      "compute_public_0_h_address0": {
+        "ports": [
+          "compute_public_0/h_address0",
+          "h_address0_0"
+        ]
+      },
+      "compute_public_0_h_address1": {
+        "ports": [
+          "compute_public_0/h_address1",
+          "h_address1_0"
+        ]
+      },
+      "compute_public_0_h_ce0": {
+        "ports": [
+          "compute_public_0/h_ce0",
+          "h_ce0_0"
+        ]
+      },
+      "compute_public_0_h_ce1": {
+        "ports": [
+          "compute_public_0/h_ce1",
+          "h_ce1_0"
+        ]
+      },
+      "compute_public_0_h_d0": {
+        "ports": [
+          "compute_public_0/h_d0",
+          "h_d0_0"
+        ]
+      },
+      "compute_public_0_h_d1": {
+        "ports": [
+          "compute_public_0/h_d1",
+          "h_d1_0"
+        ]
+      },
+      "compute_public_0_h_we0": {
+        "ports": [
+          "compute_public_0/h_we0",
+          "h_we0_0"
+        ]
+      },
+      "compute_public_0_h_we1": {
+        "ports": [
+          "compute_public_0/h_we1",
+          "h_we1_0"
+        ]
+      },
+      "f_q0_0_1": {
+        "ports": [
+          "f_q0_0",
+          "compute_public_0/f_q0"
+        ]
+      },
+      "g_q0_0_1": {
+        "ports": [
+          "g_q0_0",
+          "compute_public_0/g_q0"
+        ]
+      },
+      "h_q0_0_1": {
+        "ports": [
+          "h_q0_0",
+          "compute_public_0/h_q0"
+        ]
+      },
+      "h_q1_0_1": {
+        "ports": [
+          "h_q1_0",
+          "compute_public_0/h_q1"
+        ]
+      },
+      "logn_0_1": {
+        "ports": [
+          "logn_0",
+          "compute_public_0/logn"
+        ]
+      }
+    }
+  }
+}

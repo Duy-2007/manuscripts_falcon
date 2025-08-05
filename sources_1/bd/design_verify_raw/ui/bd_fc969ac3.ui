@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.496835",
+   "Default View_TopLeft":"-149,-610",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port ap_ctrl_0 -pg 1 -lvl 0 -x -20 -y -160 -defaultsOSRD
+preplace port port-id_ap_clk_0 -pg 1 -lvl 0 -x -20 -y -140 -defaultsOSRD
+preplace port port-id_ap_rst_0 -pg 1 -lvl 0 -x -20 -y -120 -defaultsOSRD
+preplace port port-id_tmp_ap_vld_0 -pg 1 -lvl 2 -x 320 -y -120 -defaultsOSRD
+preplace portBus ap_return_0 -pg 1 -lvl 2 -x 320 -y -100 -defaultsOSRD
+preplace portBus c0_0 -pg 1 -lvl 0 -x -20 -y -100 -defaultsOSRD
+preplace portBus h_0 -pg 1 -lvl 0 -x -20 -y -60 -defaultsOSRD
+preplace portBus logn_0 -pg 1 -lvl 0 -x -20 -y -40 -defaultsOSRD
+preplace portBus s2_0 -pg 1 -lvl 0 -x -20 -y -80 -defaultsOSRD
+preplace portBus tmp_0 -pg 1 -lvl 2 -x 320 -y -80 -defaultsOSRD
+preplace inst verify_raw_0 -pg 1 -lvl 1 -x 150 -y -100 -defaultsOSRD
+preplace netloc ap_clk_0_1 1 0 1 NJ -140
+preplace netloc verify_raw_0_ap_return 1 1 1 NJ -100
+preplace netloc ap_rst_0_1 1 0 1 NJ -120
+preplace netloc c0_0_1 1 0 1 NJ -100
+preplace netloc h_0_1 1 0 1 NJ -60
+preplace netloc logn_0_1 1 0 1 NJ -40
+preplace netloc s2_0_1 1 0 1 NJ -80
+preplace netloc verify_raw_0_tmp 1 1 1 NJ -80
+preplace netloc verify_raw_0_tmp_ap_vld 1 1 1 NJ -120
+preplace netloc ap_ctrl_0_1 1 0 1 NJ -160
+levelinfo -pg 1 -20 150 320
+pagesize -pg 1 -db -bbox -sgen -150 -220 490 240
+"
+}
+
